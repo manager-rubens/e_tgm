@@ -1,0 +1,49 @@
+body {
+  font-family: "Arial", sans-serif; /* Mudar para uma fonte mais luxuosa depois */
+  background-color: #0d0d0d; /* Fundo Escuro */
+  color: #f0f0f0; /* Texto Claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  padding: 40px;
+  border: 1px solid #333; /* Borda sutil */
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+  font-size: 2.5em;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+#countdownTimer {
+  font-size: 4em;
+  color: #ff4500; /* Cor de urgência */
+  margin: 10px 0;
+}
+
+.guardian-status {
+  margin-top: 20px;
+}
+
+#purchaseButton {
+  background-color: #ff4500;
+  color: #0d0d0d;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background-color 0.3s;
+}
+
+#purchaseButton:hover {
+  background-color: #e03b00;
+}

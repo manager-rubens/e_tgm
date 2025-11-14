@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Grand Mute</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="dialUpSound" src="dial-up.mp3" loop></audio>
+
+    <div class="container">
+      <h1>THE GRAND MUTE</h1>
+
+      <div class="status-box">
+        <p>PRÓXIMO RESET EM:</p>
+        <h2 id="countdownTimer">60:00</h2>
+      </div>
+
+      <div class="guardian-status">
+        <p>GUARDIÃO ATUAL DA PAZ DIGITAL:</p>
+        <span id="lastGuardian">Ninguém (O Som Está Ligado!)</span>
+      </div>
+
+      <button id="purchaseButton">
+        COMPRAR O SILÊNCIO<br />
+        (R$ <span id="currentPrice">100,00</span>)
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
