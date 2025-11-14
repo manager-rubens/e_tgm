@@ -47,3 +47,41 @@ h1 {
 #purchaseButton:hover {
   background-color: #e03b00;
 }
+
+.admin-area {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.admin-area.hidden {
+  display: none;
+}
+
+#confirmMuteButton {
+  background-color: #4caf50; /* Verde de Sucesso */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 5px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+
+hr {
+  margin: 40px 0;
+  border-color: #333;
+}

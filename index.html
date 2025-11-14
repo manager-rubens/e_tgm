@@ -14,19 +14,55 @@
 
       <div class="status-box">
         <p>PRÓXIMO RESET EM:</p>
-        <h2 id="countdownTimer">60:00</h2>
+        <h2 id="countdownTimer">--:--</h2>
       </div>
 
       <div class="guardian-status">
         <p>GUARDIÃO ATUAL DA PAZ DIGITAL:</p>
-        <span id="lastGuardian">Ninguém (O Som Está Ligado!)</span>
+        <span id="lastGuardian">Conectando ao Estado Global...</span>
       </div>
 
       <button id="purchaseButton">
         COMPRAR O SILÊNCIO<br />
-        (R$ <span id="currentPrice">100,00</span>)
+        (R$ <span id="currentPrice">---</span>)
       </button>
+
+      <p class="nota-dev">
+        💡 O botão inicia o pagamento. O administrador o confirma manualmente.
+      </p>
+
+      <hr />
+
+      <div id="adminLoginArea" class="admin-area">
+        <h3>Login Admin</h3>
+        <input type="email" id="adminEmail" placeholder="Email Admin" />
+        <input
+          type="password"
+          id="adminPassword"
+          placeholder="Senha"
+          style="margin-top: 10px"
+        />
+        <button id="loginButton" style="margin-top: 10px">Entrar</button>
+        <p id="loginMessage" style="color: red"></p>
+      </div>
+
+      <div id="adminActionArea" class="admin-area hidden">
+        <h3>Ação de Confirmação</h3>
+        <p>Último preço pago: R$ <span id="adminLastPrice">0.00</span></p>
+        <label for="buyerName">Nome do Novo Guardião:</label>
+        <input
+          type="text"
+          id="buyerName"
+          placeholder="Nome para o Placar (Ex: Elon Musk)"
+        />
+        <button id="confirmMuteButton">
+          CONFIRMAR SILÊNCIO E ATUALIZAR PREÇO (+R$ 50)
+        </button>
+        <button id="logoutButton" style="margin-left: 10px">Sair</button>
+      </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
 
     <script src="script.js"></script>
   </body>
